@@ -1,0 +1,131 @@
+header {
+	text-align: center;
+	clear: both;
+	background-color: black;
+	font-family:Arial;
+	font-size: 15px;
+	color: white;
+	line-height: 150%;
+}
+
+body{
+	text-align: left;
+	background:white;
+	font-family: Arial;
+	font-size: 12;
+}
+
+.banner{
+	width: 700px;
+	height: 300px;
+	border: 3px solid black;
+	margin: auto;
+/*background-image: url(banner/Electrodomesticos.jpg); "Agg una imagen"*/
+	background-size: 100% 100%;
+
+/*animation: banner 10s infinite; lo mismo de abajo, es mas resumido*/
+	animation-name: banner;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/*Ciclo del banner al intercambiar cada imagen */
+@keyframes banner{
+	0%, 30% {
+		background-image: url(banner/Electrodomesticos.jpg);
+		opacity: 1;
+	}
+
+	31%, 34%{
+		opacity: 0.1;
+	}
+
+	35%, 65%{
+		background-image: url(banner/Entretenimiento.jpg);
+		opacity: 1;
+	}
+
+	66%, 69%{
+		opacity: 0.1;
+	}
+
+	70%, 100%{
+		background-image: url(banner/vehiculos.jpeg);
+		opacity: 1;
+	}
+}
+
+/*Estilo del menu de inicio*/
+nav ul {
+	padding: 0;
+	text-align: left;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a{
+	font-family: Arial;
+	font-size: 20px;
+	text-decoration: none;
+	float: left;
+	padding: 10px;
+	background-color: #000000;
+	color: #FFF;
+}
+
+nav ul li a: hover {
+	background-color: #2586d7;
+	margin-top: -2px;
+	padding-bottom: 12px;
+}
+ /*Alineacion de "Quienes somos" y "Siguenos" */
+
+h2{
+	text-align: center;
+	margin: 0;
+	padding: 5px;	
+}
+
+h3{
+	text-align: center;
+}
+
+/*Todo el control del articulo y la imagen*/
+.contenedor{
+	height: 500px;
+	width: 1200px;
+	overflow: hidden;
+}
+
+.presentacion{
+	height: 500px;
+	width: 600px;
+	float: left;
+}
+
+.articulo{
+	height: 500px;
+	width: 600px;
+	font-family: Arial;
+	font-size: 12px;
+	clear: both;
+	line-height: 150%;
+	pading-left: 10px; 
+}
+
+.capture{
+	height: 500px;
+	width: 600px;
+	padding-left: 20px;
+}
+.cap {
+	width: 300px;
+	height: 450px;
+	background-image: url(Inicio/cap.jpeg);
+	background-size: 100% 100%;
+	margin: auto; 
+}
+
